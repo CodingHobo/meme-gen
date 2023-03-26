@@ -29,6 +29,15 @@ memeForm.addEventListener('submit', function(e) {
 
   container.append(memeDiv);
   memeForm.reset();
+
+
+
+  // const memeDiv = document.createElement('div');
+  // memeDiv.append(addTextToImg(img, input1, input2));
+
+
+  // container.append(memeDiv);
+  // memeForm.reset();
 })
 
 document.addEventListener('click', function(e) {
@@ -37,5 +46,23 @@ document.addEventListener('click', function(e) {
   }
 });
 
+// function addTextToImg (img, input1, input2) {
+//   const newMemeImg = document.createElement('img');
+//   newMemeImg.src = image.value;
+//   img = newMemeImg;
+
+//   const topTextDiv = document.createElement('div');
+//   input1 = topText.value;
+//   input1.classList.add('top-text');
+//   topTextDiv.innerText = input1;
+
+//   const bottomTextDiv = document.createElement('div');
+//   input2 = bottomText.value;
+//   input2.classList.add('bottom-text');
+//   bottomTextDiv.innerText = input2;
+
+//   img.append(topTextDiv);
+//   img.append(bottomTextDiv);
+// }
 
 

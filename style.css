@@ -1,9 +1,10 @@
 /* color pallete light to dark:
+eff6e0, aec3b0, 598392, 124559, 01161e
 f7d1cd, e8c2ca, d1b3c4, b392ac, 735d78 */
 
 body {
-    background-color: #735d78;
-    color: #f7d1cd;
+    background-color: #124559;
+    color: #eff6e0;
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     margin: 20px;
@@ -17,7 +18,8 @@ form {
 
 input {
     width: 50%;
-    background-color: #e8c2ca;
+    background-color: #eff6e0;
+    color: #01161e;
     padding: 5px;
     font-size: 18px;
     border-radius: 10px;
@@ -25,7 +27,8 @@ input {
 
 
 button {
-    background-color: #e8c2ca;
+    background-color: #eff6e0;
+    color: #01161e;
     padding: 5px 20px;
     border-radius: 10px;
     font-size: 18px;
@@ -33,8 +36,8 @@ button {
 
 button:hover {
     font-size: 20px;
-    background-color: #b392ac;
-    color: #f7d1cd;
+    background-color: #aec3b0;
+    color: #01161e;
     text-shadow: 1px 1px 2px black;
 }
 
@@ -42,7 +45,7 @@ button:hover {
 #container {
     display: inline-block;
     position: relative;
-    background-color: #b392ac;
+    background-color: #01161e;
     min-height: 400px;
     width: 90%;
     margin: 1.6%;
