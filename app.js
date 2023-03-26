@@ -31,5 +31,11 @@ memeForm.addEventListener('submit', function(e) {
   memeForm.reset();
 })
 
+document.addEventListener('click', function(e) {
+  if (e.target.tagName === 'IMG') {
+    e.target.remove();
+  }
+});
+
 
 
