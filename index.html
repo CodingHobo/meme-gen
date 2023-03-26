@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Meme Generator</title>
+  </head>
+
+  <body>
+    <h1>Meme Generator</h1>
+
+    <form action="" id="memeForm">
+      <div>
+        <label for="url">Image URL:</label>
+        <input type="url" id="url" name="url" placeholder="(required) paste your url link here" required>
+      </div>
+      <div>
+        <label for="top">Text for Top of Image:</label>
+        <input type="text" id="top" name="top" required placeholder="great memes must have great commentary">
+      </div>
+      <div>
+        <label for="bottom">Text for Bottom of Image:</label>
+        <input type="text" name="bottom" id="bottom" required
+          placeholder="and only the best memes have text on top AND bottom">
+      </div>
+      <div>
+        <button>Submit</button>
+      </div>
+    </form>
+    <div id="memes">
+      <h3>Your Brilliant Memes:</h3>
+      <div id="container">
+        <div id="top-text" class="top-text"></div>
+        <div id="bottom-text" class="bottom-text"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+
+  </body>
+
+</html>

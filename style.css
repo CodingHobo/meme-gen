@@ -1,0 +1,97 @@
+/* color pallete light to dark:
+f7d1cd, e8c2ca, d1b3c4, b392ac, 735d78 */
+
+body {
+    background-color: #735d78;
+    color: #f7d1cd;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    margin: 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+form {
+    display: block;
+    line-height: 2;
+}
+
+input {
+    width: 50%;
+    background-color: #e8c2ca;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+
+button {
+    background-color: #e8c2ca;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+button:hover {
+    font-size: 20px;
+    background-color: #b392ac;
+    color: #f7d1cd;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+#container {
+    display: inline-block;
+    position: relative;
+    background-color: #b392ac;
+    min-height: 400px;
+    width: 90%;
+    margin: 1.6%;
+    padding:10px;
+    border-radius: 10px;
+
+}
+.top-text {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: white;
+    font-size: 32px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: -4px 4px 5px black;
+}
+
+.bottom-text {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    color: white;
+    font-size: 32px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: -4px 4px 5px black;
+}
+
+.cancel {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.container {
+    position: relative;
+  }
+
+.meme-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    position: relative;
+}
+
+.delete {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
