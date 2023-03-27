@@ -30,7 +30,7 @@ input {
 }
 
 
-button {
+.submit {
     background-color: #c18c5d;
     color: #ecc8af;
     padding: 5px 20px;
@@ -39,7 +39,7 @@ button {
     text-shadow: 1px 1px 2px black;
 }
 
-button:hover {
+.submit:hover {
     font-size: 20px;
     background-color: #ce796b;
     color: #01161e;
@@ -95,14 +95,30 @@ button:hover {
     position: relative;
 }
 
-.delete {
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 8px;
-    right: 16px;
+.meme-img:hover {
+    opacity: 0.5;
 }
 
 #delete-alert {
     color: #ce796b;
 }
+
+.deleteBtn {
+    position: absolute;
+    font-size: 20px;
+    top: 8px;
+    left: 365px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    }
+
+.deleteBtn:hover {
+    background-color: white;
+    color: black;
+    opacity: 1;
+}
+
+
+

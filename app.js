@@ -12,6 +12,7 @@ memeForm.addEventListener('submit', function(e) {
   const newMeme = document.createElement('img');
   const topTextDiv = document.createElement('div');
   const bottomTextDiv = document.createElement('div');
+  const deleteBtn = document.createElement('button');
 
 
   newMeme.src = image.value;
@@ -23,10 +24,14 @@ memeForm.addEventListener('submit', function(e) {
   topTextDiv.innerText = topText.value;
   bottomTextDiv.innerText = bottomText.value;
 
+  deleteBtn.classList.add('deleteBtn');
+  deleteBtn.innerText = 'x';
 
   memeDiv.append(newMeme);
   memeDiv.append(bottomTextDiv);
   memeDiv.append(topTextDiv);
+  memeDiv.append(deleteBtn);
+
   memeDiv.classList.add('container');
 
 
@@ -36,7 +41,7 @@ memeForm.addEventListener('submit', function(e) {
 })
 
 container.addEventListener('click', function(e) {
-  if (e.target.className === 'meme-img' ) {
+  if (e.target.className === 'deleteBtn' ) {
     e.target.parentElement.remove();
   }
 });
