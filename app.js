@@ -7,10 +7,10 @@ const container = document.querySelector('#container');
 
 memeForm.addEventListener('submit', function(e) {
   e.preventDefault();
-  const memeDiv = document.createElement('DIV');
-  const newMeme = document.createElement('IMG');
-  const topTextDiv = document.createElement('DIV');
-  const bottomTextDiv = document.createElement('DIV');
+  const memeDiv = document.createElement('div');
+  const newMeme = document.createElement('img');
+  const topTextDiv = document.createElement('div');
+  const bottomTextDiv = document.createElement('div');
 
 
   newMeme.src = image.value;
@@ -22,23 +22,20 @@ memeForm.addEventListener('submit', function(e) {
   topTextDiv.innerText = topText.value;
   bottomTextDiv.innerText = bottomText.value;
 
-  memeDiv.classList.add('container');
+
   memeDiv.append(newMeme);
   memeDiv.append(topTextDiv);
   memeDiv.append(bottomTextDiv);
+  memeDiv.classList.add('container');
 
   container.append(memeDiv);
   memeForm.reset();
 })
 
-document.addEventListener('click', function(e) {
-  if (e.target.tagName === 'img') {
-    e.target.remove();
+container.addEventListener('click', function(e) {
+  if (e.target.className === 'meme-img' ) {
+    e.target.parentElement.remove();
   }
 });
 
-// document.addEventListener('click', function(e) {
-//   if (e.target.className === 'container') {
-//     e.target.remove();
-//   }
-// });
+
