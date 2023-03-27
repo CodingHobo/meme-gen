@@ -103,3 +103,6 @@ button:hover {
     right: 16px;
 }
 
+#delete-alert {
+    color: #ce796b;
+}

@@ -7,6 +7,7 @@ const container = document.querySelector('#container');
 
 memeForm.addEventListener('submit', function(e) {
   e.preventDefault();
+  // const memeSpan = document.createElement('span');
   const memeDiv = document.createElement('div');
   const newMeme = document.createElement('img');
   const topTextDiv = document.createElement('div');
@@ -24,9 +25,11 @@ memeForm.addEventListener('submit', function(e) {
 
 
   memeDiv.append(newMeme);
-  memeDiv.append(topTextDiv);
   memeDiv.append(bottomTextDiv);
+  memeDiv.append(topTextDiv);
   memeDiv.classList.add('container');
+
+
 
   container.append(memeDiv);
   memeForm.reset();
